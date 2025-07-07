@@ -24,27 +24,26 @@
     </div>
   </nav>
 
-  <!-- Contact Section -->
-  <section class="section" id="contact" data-aos="fade-up">
-    <h2 class="gradient-text">📬 Get in Touch</h2>
-    <p>Have a project, idea, or just want to say hi? I’d love to connect!</p>
+   <!-- Contact Section -->
+  <section class="section contact-section" data-aos="fade-up">
+    <div class="contact-container glass-box">
+      <h2 class="gradient-text">Let's Get in Touch</h2>
+      <p class="sub-text">I’d love to hear from you. Whether you have a question or just want to say hi, drop a message!</p>
 
-    <p>📧 <a href="mailto:kaaysha.rao@gmail.com">kaaysha.rao@gmail.com</a></p>
-    <p>📞 +91 74834 23989</p>
-    <p>📍 Bangalore, India</p>
+      <form class="contact-form" action="https://formspree.io/f/xnnvryna" method="POST">
+        <div class="form-group">
+          <input type="email" name="email" required />
+          <label>Your Email</label>
+        </div>
 
-    <form action="https://formspree.io/f/xwkgbdqe" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="150">
-      <label>Your Name:
-        <input type="text" name="name" required>
-      </label>
-      <label>Your Email:
-        <input type="email" name="email" required>
-      </label>
-      <label>Your Message:
-        <textarea name="message" rows="4" required></textarea>
-      </label>
-      <button type="submit" class="btn">📩 Send Message</button>
-    </form>
+        <div class="form-group">
+          <textarea name="message" rows="5" required></textarea>
+          <label>Your Message</label>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
