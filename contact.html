@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kaaysha Rao</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Kaaysha Rao</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+      <div class="toggle-dark" onclick="toggleDarkMode()">🌙</div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact" data-aos="fade-up">
+    <h2 class="gradient-text">📬 Get in Touch</h2>
+    <p>Have a project, idea, or just want to say hi? I’d love to connect!</p>
+
+    <p>📧 <a href="mailto:kaaysha.rao@gmail.com">kaaysha.rao@gmail.com</a></p>
+    <p>📞 +91 74834 23989</p>
+    <p>📍 Bangalore, India</p>
+
+    <form action="https://formspree.io/f/xwkgbdqe" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="150">
+      <label>Your Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>Your Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>Your Message:
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">📩 Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>“Design with empathy. Build with purpose.”</p>
+    <p>© 2025 Kaaysha Rao | <a href="mailto:kaaysha.rao@gmail.com">kaaysha.rao@gmail.com</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
