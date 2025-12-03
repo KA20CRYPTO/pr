@@ -22,6 +22,93 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* --- CONTACT PAGE ONLY --- */
+.contact-page .contact-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-page .contact-container h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-page .sub-text {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.contact-page .contact-form {
+  width: 100%;
+}
+
+.contact-page .form-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.contact-page .form-group input,
+.contact-page .form-group textarea {
+  width: 100%;
+  padding: 16px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.contact-page .form-group input:focus,
+.contact-page .form-group textarea:focus {
+  border-color: #00e1ff;
+  background: rgba(0, 225, 255, 0.08);
+}
+
+.contact-page .form-group label {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  padding: 2px 8px;
+  font-size: 13px;
+  background: #00c8ff;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* --- Improved Send Button (Only on contact page) --- */
+.contact-page .btn {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #000;
+  background: #00eaff;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+  letter-spacing: 0.4px;
+}
+
+.contact-page .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px #00eaff, 0 0 28px #00eaff70;
+}
+
 
 /* === Navbar === */
 .navbar {
@@ -649,5 +736,122 @@ window.onscroll = () => {
 .cert-card a:hover {
   text-decoration: underline;
 }
+  .project-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+/* === Light Mode === */
+body.light-mode {
+  background: #f5f5f5;
+  color: #111827;
+}
 
+body.light-mode .navbar,
+body.light-mode .section,
+body.light-mode .skills-grid li,
+body.light-mode .project,
+body.light-mode .cert-card,
+body.light-mode .contact-container {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .nav-links a {
+  color: #333;
+}
+
+body.light-mode .btn {
+  background: #111827;
+  color: #fff;
+}
+
+body.light-mode .btn-outline {
+  border: 2px solid #111827;
+  color: #111827;
+}
+
+body.light-mode .btn-outline:hover {
+  background: #111827;
+  color: #fff;
+}
+
+body.light-mode .back-to-top {
+  background: #111827;
+  color: #fff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.skills-grid li {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  font-weight: 500;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+}
+
+.skills-grid li:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.7);
+}
+/* Terminal Hacker Mode Theme */
+body.hacker {
+  background: #0f0f0f;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+}
+
+body.hacker a,
+body.hacker .btn,
+body.hacker .nav-links a {
+  color: #00ff00 !important;
+  border-color: #00ff00 !important;
+}
+
+body.hacker .btn:hover {
+  background: #00ff00;
+  color: #0f0f0f;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+body.hacker .project-card,
+body.hacker .cert-card,
+body.hacker .skills-grid li {
+  background: rgba(0, 255, 0, 0.05);
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.footer a i {
+  margin-left: 8px;
+  color: var(--accent-2);
+  transition: 0.3s ease;
+}
+.footer a i:hover {
+  color: var(--accent);
+  transform: scale(1.2);
+}
